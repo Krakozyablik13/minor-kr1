@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Решение алгоритмической задачи</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <!--top menu-->
+    <div class="top_menu">
+        <ul class="ul_top">
+            <li class="li_top"><a class="li_a_top" href="index.html">Home</a></li>
+            <li class="li_top"><a class="li_a_top" href="genre_groups.html">Genre groups</a></li>
+            <li class="li_top"><a class="li_a_top" href="/main_site/our_reading_history.html">Our history</a></li>
+            
+            <li class="li_top"><a class="li_a_top_picture" href="https://www.whatshouldireadnext.com/" target="_blank"><img src="/main_site/images/bookoftheday.png" alt="Book recommendations" style="width:25px;height:25px;"></a></li>
+
+            <li class="li_top"><a class="li_a_top_picture" href="/main_site/index.html#h4"><img src="/main_site/images/mail.png" alt="Contact us" style="width:25px;height:25px;"></a></li>
+
+            <li class="li_top"><a class="li_a_top" href="/main_site/passport/index.html">Passport</a></li>
+
+            <li class="li_top"><a class="li_a_top" href="/main_site/screenshot.html">DOM_JS. Считываем информацию из DOM</a></li>
+
+            <li class="li_top"><a class="li_a_top li_a_top_used" href="/main_site/alg_task.html">Алгоритмическая задача</a></li>
+    
+        </ul>
+    
+    
+    </div>
+
+
+    <div class="main_text">
+        <br><br> <br>
+    <h1>Решение алгоритмической задачи</h1> <br>
+    <p>Дано число X. Определить, принадлежит ли это число заданному промежутку [a, b].</p><br>
+    
+
+    <form action="https://www.bing.com/search?" id="AlgTask" name="AlgTask" target="_blank">
+        <p>Условие:</p>
+        <textarea name="task" rows="5" cols="30">Дано число X. Определить, принадлежит ли это число заданному промежутку [a, b].Если принадлежит — отправить данные на удаленный сервер</textarea><br>
+
+        <label for="x_value">Введите значение X:</label>
+        <input type="number" id="x_value" name="x_value" value="10"> <br> <br>
+
+        <label for="a_value">Введите значение a:</label>
+        <input type="number" id="a_value" name="a_value" value="8"> <br> <br>
+
+        <label for="b_value">Введите значение b:</label>
+        <input type="number" id="b_value" name="b_value" value="20"> <br> <br>
+
+        <label for="result">Результат:</label>
+        <input type="text" id="result" name="result"><br> <br>
+
+        <button type="button" onclick="IsItInTheArea()">Определить</button> <br> <br>
+
+        <button type="button" onclick="SendToSearch()">Отправить</button> 
+        
+
+    </form>
+   </div>
+
+   <script>
+    function IsItInTheArea() {
+
+        let a = document.getElementById("a_value").value;
+        let b = document.getElementById("b_value").value;
+        let x = document.getElementById("x_value").value;
+
+        if ((+x <= +b) && (+x >= +a)) {
+            document.getElementById("result").value="X принадлежит заданному промежутку";
+            check = true;
+        } else {
+            document.getElementById("result").value="X не принадлежит заданному промежутку";
+            check = false;
+        }
+    } 
+    function SendToSearch () {
+
+        let a = document.getElementById("a_value").value;
+        let b = document.getElementById("b_value").value;
+        let x = document.getElementById("x_value").value;
+        let task = document.getElementsByName("task")[0].value;
+        let result = document.getElementById("result").value;
+
+        if ((+x <= +b) && (+x >= +a)) {
+            let query = `https://www.bing.com/search?q=${encodeURIComponent(task)}, где X=${x}, a=${a}, b=${b}, результат: ${encodeURIComponent(result)}`;
+            window.open(query, "_blank");
+        } else {
+            alert("Есть недостатки. Повторите ввод")
+            return;
+        }
+
+        
+
+    } 
+    </script>
+
+</body>
+
+</html>

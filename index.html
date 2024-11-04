@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book talk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--top menu-->
+<div class="top_menu">
+    <ul class="ul_top">
+        <li class="li_top"><a class="li_a_top li_a_top_used" href="index.html">Home</a></li>
+        <li class="li_top"><a class="li_a_top" href="genre_groups.html">Genre groups</a></li>
+        <li class="li_top"><a class="li_a_top" href="/main_site/our_reading_history.html">Our history</a></li>
+    
+        <li class="li_top"><a class="li_a_top_picture" href="https://www.whatshouldireadnext.com/" target="_blank"><img src="/main_site/images/bookoftheday.png" alt="Book recommendations" style="width:25px;height:25px;"></a></li>
+
+        <li class="li_top"><a class="li_a_top_picture" href="#h4"><img src="/main_site/images/mail.png" alt="Contact us" style="width:25px;height:25px;"></a></li>
+
+        <li class="li_top"><a class="li_a_top" href="/main_site/passport/index.html">Passport</a></li>
+
+        <li class="li_top"><a class="li_a_top" href="/main_site/screenshot.html">DOM_JS. Считываем информацию из DOM</a></li>
+
+        <li class="li_top"><a class="li_a_top" href="/main_site/alg_task.html">Алгоритмическая задача</a></li>
+
+    </ul>
+
+
+</div>
+
+<!--sidebar contents-->
+<div>
+    <ul class="ul_sidebar">
+        <li class="li_sidebar"><a class="li_a_sidebar" href="#h2">What do we do here</a></li>
+        <li class="li_sidebar"><a class="li_a_sidebar" href="#h3">How do I get into the club</a></li>
+        <li class="li_sidebar"><a class="li_a_sidebar" href="#h4">Our contact information</a></li>
+    </ul>
+</div>
+<!--page contents-->
+
+
+
+<div class="body">
+    <img src="/main_site/images/library.jpg" alt="Welcome to the library" style="width:100%">
+    <div class="main_text">
+        <br>
+        <h1>Welcome to the Book Talk club</h1> <br>
+        <p>Hello, book lovers and English language enthusiasts!</p> <br>
+
+        <p>We're thrilled to have you join our community dedicated to improving English skills through the joy of reading. Whether you're a beginner looking to build vocabulary or an advanced learner aiming to refine your comprehension, you've come to the right place.</p> <br>
+            
+        <p>Ready to dive into our current book selection? Check out our "Genre groups" section to get started.</p> <br>
+
+        <h1 id="h2">What do we do here</h1> <br>
+
+        <p>Here, we explore captivating stories, discuss thought-provoking themes, and support each other in our language learning journey. Our book club offers a friendly, encouraging environment where you can practice your English, share your thoughts, and connect with fellow readers from around the world.</p> 
+        <br>
+
+        <h1 id="h3">How do I get into the club</h1> <br>
+
+        <p>Joining our English practice book club is easy and fun! Simply create a free account on our website to gain access to all our features. Once registered, browse our current book selections and choose the one that interests you most. We offer options for various English proficiency levels in different genres, so you'll find something suitable regardless of your current skills. After selecting a book, join its dedicated discussion forum where you can interact with other members, share your thoughts, and practice your English writing.</p> <br>
+
+        <p>We also host weekly video chat sessions for verbal practice and deeper book discussions. Don't worry if you're not confident in your English skills yet – our community is supportive and encouraging. Remember, the goal is to improve your English while enjoying great literature. Happy reading and learning!</p> <br>
+
+
+        <h1 id="h4">Our contact information</h1> <br>
+
+        <p>If you still have any questions left, you can send a comment below or write to us directly on email or Telegram group.</p> <br>
+        <p>Download our official emblem to set it as a screen wallpaper in the following link: <a href="/main_site/picture.html" target="_blank"><img src="/main_site/images/symbol.png" alt="Your future wallpaper" style="width:60px; height: 40px;"></a></p><br>
+
+        <p>You can apply for membership in the form below:</p> <br>
+
+        <form action="../../cgi-bin/form_action.py" method='get' target='_self'>
+
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+
+            <label for="group">Group:</label><br>
+            <input type="text" id="group" name="group"><br>
+
+            <label for="phnumber">Phone number:</label><br>
+            <input type="text" id="phnumber" name="phnumber"><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="sentwhen">Date:</label><br>
+            <input type="date" id="sentwhen" name="sentwhen"><br> 
+
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br> 
+
+            <label for="meetings">How often can you join the club meetings in a week?</label><br>
+            <input type="number" id="meetings" name="meetings"><br><br>
+
+            <p>What genres are you ready to discuss?</p>
+            <input type="checkbox" id="horror" name="horror" value="Horror">
+            <label for="horror">Horror</label><br>
+            <input type="checkbox" id="thriller" name="thriller" value="Thriller">
+            <label for="thriller">Thriller</label><br>
+            <input type="checkbox" id="fantasy" name="fantasy" value="Fantasy">
+            <label for="fantasy">Fantasy</label><br>
+            <input type="checkbox" id="romance" name="romance" value="Romance">
+            <label for="romance">Romance</label>
+            <br><br>
+
+            
+            <p>What is your English level?</p>
+            <input type="radio" id="b1" name="lang-level" value="B1">
+            <label for="b1">B1</label>
+            <input type="radio" id="b2" name="lang-level" value="B2">
+            <label for="b2">B2</label>
+            <input type="radio" id="c1" name="lang-level" value="C1">
+            <label for="c1">C1</label>
+            <input type="radio" id="c2" name="lang-level" value="C2">
+            <label for="c2">C2</label>
+            <br><br>
+
+            <p>Do you have any additional comments?</p><br>
+            <textarea name="comments" rows="10" cols="30"></textarea><br>
+            <input type="hidden" id="cust-id" name="cust-id" value="12345">
+
+
+            <input type="submit" value="Submit">
+        </form><br> <br>
+
+    </div>
+</div>
+
+
+</body>
+
+</html>

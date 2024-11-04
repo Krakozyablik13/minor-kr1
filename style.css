@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+.body {
+    background-color: #fff2d5;
+    
+}
+
+.main_text {
+    margin-left:200px;
+    padding-left: 40px;
+}
+
+.main_text_wo_pic {
+    margin-left:200px;
+    padding-left: 40px;
+   
+}
+
+.ul_top{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #ab812c;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+
+.li_top{
+    float: left; 
+}
+.li_a_top{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.li_a_top_picture {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+
+}
+.li_a_top:hover {
+    background-color: rgb(122, 84, 33);
+  }
+
+.li_a_top_used {
+    background-color:rgb(122, 84, 33)
+}
+
+.li_a_top_picture:hover {
+    background-color: rgb(122, 84, 33);
+}
+
+.ul_sidebar {
+    list-style-type: none;
+    overflow: auto;
+    background-color: #fff2d5;
+    width:200px;
+    margin-top: 47px;
+    height: 100%;
+    position: fixed;
+
+}
+
+.li_a_sidebar{
+    display: block;
+    color: rgb(82, 71, 42);
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+    border-bottom-style: dashed;
+}
+.li_a_sidebar:hover {
+    background-color: rgb(237, 206, 165);
+}
+
+.table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
+.whole_table {
+    background-image: url("/main_site/images/table-back.jpg"); width: 400px; height: 200px
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 70px;
+  }
+
+  .book-link {
+    color: black;
+    text-decoration: none;
+  }
+.book-link:hover {
+    color:rgb(80, 133, 112)
+}
+
+.genre_pic {
+    width: 100%;
+}
+
+.book_cover {
+    width: 150px;
+    height: 250px;
+    float: left;
+  
+    
+}
+.book_description {
+    position: relative;
+    left: 40px;
+    margin-bottom: 100px;
+    width: 80%
+    
+}
