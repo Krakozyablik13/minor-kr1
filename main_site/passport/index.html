@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf8">
+    <title>Изменяем кириллицу на латиницу по клику</title>
+    <link rel="stylesheet" href="/main_site/passport/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300; 400; 500; 600;700&family=Inter+Tight: ital, wght@0,100.. 900;1, 100. 900&family=PT+Sans+Caption: wght@400;700&family=Poiret+One&display=swap" rel="stylesheet">
+
+<script>
+    function myFunction() {
+        document.getElementsByTagName("p")[0].innerText = "DEPARTMENT OF INTERNAL AFFAIRS";
+        document.getElementsByTagName("p")[1].innerText = "OF MOSCOW";
+      document.getElementsByTagName("p")[4].innerText = "ANTIPOVA";
+      document.getElementsByTagName("p")[5].innerText = "DARIA";
+      document.getElementsByTagName("p")[6].innerText = "DMITRIEVNA";
+      document.getElementsByTagName("p")[7].innerText = "FEM.";
+      document.getElementsByTagName("p")[9].innerText = "MOSCOW";
+      document.getElementsByTagName("p")[10].innerText = "MOSCOW DISTRICT";
+    }
+</script>
+
+</head>
+<body>
+<h1>Изменяем кириллицу на латиницу по клику</h1>
+<div id="main_fon">
+
+    <h5 id="pass_title" class="poiret-one-regular">РОССИЙСКАЯ ФЕДЕРАЦИЯ</h5>
+    <div id="page_top">
+        <p class="vidanstr1">ОТДЕЛОМ ВНУТРЕННИХ ДЕЛ</p>
+        <p class="vidanstr2">ГОР. МОСКВА</p>
+        <p class="vidanstrdata">15.03.2014</p>
+        <p class="vidanstrcode">110-000</p>
+        <img class="podpis" src="podpis1.png">
+        <img class="podpis1" src="podpis.png">
+    </div>
+    <div id="page_bottom">
+        <img class="passfoto" src="pass-photo.jpg">
+        <p class="hfamilia">АНТИПОВА</p>
+        <p class="hname" >ДАРЬЯ</р>
+        <p class="hfname" >ДМИТРИЕВНА</р>
+        <p class="hpol">ЖЕН. </р>
+        <p class="hborn">13.02.2005</p>
+        <p class="hborn1" >ГОР. МОСКВА</р>
+        <p class="hborn2" >МОСКОВСКОЙ ОБЛ. </р>
+    </div>
+    <div class="footer">
+    
+        <button type="button" onclick="myFunction()">Изменить</button>
+    </div>
+        
+    </div>
+
+</div>
+
+
+</body>
+
+
+</html>
