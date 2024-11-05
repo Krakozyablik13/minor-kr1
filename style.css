@@ -91,7 +91,7 @@
     padding: 15px;
 }
 .whole_table {
-    background-image: url("/main_site/images/table-back.jpg"); width: 400px; height: 200px
+    background-image: url("./images/table-back.jpg?raw=true"); width: 400px; height: 200px
 }
 
 .center {
