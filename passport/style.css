@@ -3,6 +3,48 @@
     padding: 0px;
     margin: 0px;
 }
+
+.ul_top{
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #ab812c;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+}
+
+.li_top{
+    float: left; 
+}
+.li_a_top{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.li_a_top_picture {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+
+}
+.li_a_top:hover {
+    background-color: rgb(122, 84, 33);
+  }
+
+.li_a_top_used {
+    background-color:rgb(122, 84, 33)
+}
+
+.li_a_top_picture:hover {
+    background-color: rgb(122, 84, 33);
+}
+
 #main_fon{
     height: 734px;
     background-image: url(fon.jpg);
