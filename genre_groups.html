@@ -5,29 +5,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Genre groups of Book talk</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
     <!--top menu-->
-    <div class="top_menu">
-        <ul class="ul_top">
-            <li class="li_top"><a class="li_a_top" href="index.html">Home</a></li>
-            <li class="li_top"><a class="li_a_top li_a_top_used" href="genre_groups.html">Genre groups</a></li>
-            <li class="li_top"><a class="li_a_top" href="our_reading_history.html">Our history</a></li>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"></button>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">BookTalk</a>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="li_top"><a class="li_a_top" href="index.html">Home</a></li>
+                <li class="li_top li_a_top_used"><a class="li_a_top" href="genre_groups.html">Genre groups</a></li>
+                <li class="li_top"><a class="li_a_top" href="our_reading_history.html">Our history</a></li>
             
-            <li class="li_top"><a class="li_a_top_picture" href="https://www.whatshouldireadnext.com/" target="_blank"><img src="./images/bookoftheday.png?raw=true" alt="Book recommendations" style="width:25px;height:25px;"></a></li>
-
-            <li class="li_top"><a class="li_a_top_picture" href="index.html#h4"><img src="./images/mail.png?raw=true" alt="Contact us" style="width:25px;height:25px;"></a></li>
-
-            <li class="li_top"><a class="li_a_top" href="main_page.html">Passport</a></li>
-
-            <li class="li_top"><a class="li_a_top" href="screenshot.html">DOM_JS. Считываем информацию из DOM</a></li>
-
-            <li class="li_top"><a class="li_a_top" href="alg_task.html">Алгоритмическая задача</a></li>
+                <li class="li_top"><a class="li_a_top_picture" href="https://www.whatshouldireadnext.com/" target="_blank"><img src="./images/bookoftheday.png?raw=true" alt="Book recommendations" style="width:25px;height:25px;"></a></li>
     
-        </ul>
+                <li class="li_top"><a class="li_a_top_picture" href="#h4"><img src="./images/mail.png?raw=true" alt="Contact us" style="width:25px;height:25px;"></a></li>
     
+                <li class="li_top"><a class="li_a_top" href="main_page.html">Passport</a></li>
     
-    </div>
+                <li class="li_top"><a class="li_a_top" href="alg_task.html">Алгоритмическая задача</a></li>
+    
+                <li class="li_top"><a class="li_a_top" href="programms.html">Programms</a></li>
+    
+            </ul>
+        </div>
+    
+    </nav>
     
     <!--sidebar contents-->
     <div>
@@ -39,8 +53,8 @@
         </ul>
     </div>
     <div class="body">
-        <div class="main_text_wo_pic">
-            <br><br><br><br>
+        <div class="main_text">
+            <br>
             <h1>Here you can join any group you'd like</h1> <br>
             <h2 id="g1">Thriller</h2> <br>
 

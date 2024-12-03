@@ -5,31 +5,44 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Our reading history</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     </head>
     <body>
     <!--top menu-->
-    <div class="top_menu">
-        <ul class="ul_top">
-            <li class="li_top"><a class="li_a_top" href="index.html">Home</a></li>
-
-            <li class="li_top"><a class="li_a_top" href="genre_groups.html">Genre groups</a></li>
-
-            <li class="li_top"><a class="li_a_top li_a_top_used" href="our_reading_history.html">Our history</a></li>
-
-            <li class="li_top"><a class="li_a_top_picture" href="https://www.whatshouldireadnext.com/" target="_blank"><img src="./images/bookoftheday.png?raw=true" alt="Book recommendations" style="width:25px;height:25px;"></a></li>
-
-            <li class="li_top"><a class="li_a_top_picture" href="index.html#h4"><img src="./images/mail.png?raw=true" alt="Contact us" style="width:25px;height:25px;"></a></li>
-
-            <li class="li_top"><a class="li_a_top" href="main_page.html">Passport</a></li>
-
-            <li class="li_top"><a class="li_a_top" href="screenshot.html">DOM_JS. Считываем информацию из DOM</a></li>
-
-            <li class="li_top"><a class="li_a_top" href="alg_task.html">Алгоритмическая задача</a></li>
+   
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"></button>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">BookTalk</a>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="li_top"><a class="li_a_top" href="index.html">Home</a></li>
+                <li class="li_top"><a class="li_a_top" href="genre_groups.html">Genre groups</a></li>
+                <li class="li_top"><a class="li_a_top li_a_top_used" href="our_reading_history.html">Our history</a></li>
+            
+                <li class="li_top"><a class="li_a_top_picture" href="https://www.whatshouldireadnext.com/" target="_blank"><img src="./images/bookoftheday.png?raw=true" alt="Book recommendations" style="width:25px;height:25px;"></a></li>
     
-        </ul>
+                <li class="li_top"><a class="li_a_top_picture" href="#h4"><img src="./images/mail.png?raw=true" alt="Contact us" style="width:25px;height:25px;"></a></li>
     
+                <li class="li_top"><a class="li_a_top" href="main_page.html">Passport</a></li>
     
-    </div>
+                <li class="li_top"><a class="li_a_top" href="alg_task.html">Алгоритмическая задача</a></li>
+    
+                <li class="li_top"><a class="li_a_top" href="programms.html">Programms</a></li>
+    
+            </ul>
+        </div>
+    
+    </nav>
 
      <!--sidebar contents-->
      <div>
@@ -40,49 +53,51 @@
         </ul>
     </div>
     <div class="body main_text">
-        <br><br><br><br>
+        <br>
         <h1>What have we already read?</h1> <br>
 
         <h2 id="m1">September 2024</h2> <br>
 
-        <table class="table whole_table">
-            <tr class="table">
+        <div class="table-responsive table-hover">
+        <table class="mytable whole_table">
+            <tr class="mytable">
                 <th></th>
-                <th class="table">Thriller</th>
-                <th class="table">Fantasy</th>
-                <th class="table">Horror</th>
-                <th class="table">Romance</th>
+                <th class="mytable">Thriller</th>
+                <th class="mytable">Fantasy</th>
+                <th class="mytable">Horror</th>
+                <th class="mytable">Romance</th>
             </tr>
-            <tr class="table">
-                <th class="table">B1</th>
-                <td class="table"></td>
-                <td class="table"><a href="https://www.amazon.com/Harry-Potter-Sorcerers-Stone-Rowling/dp/0590353403" class="book-link" target="_blank"><i>Harry Potter and The Philosopher's stone</i> by J.K.Rowling</a></td>
-                <td class="table"></td>
-                <td class="table"></td>
+            <tr class="mytable">
+                <th class="mytable">B1</th>
+                <td class="mytable"></td>
+                <td class="mytable"><a href="https://www.amazon.com/Harry-Potter-Sorcerers-Stone-Rowling/dp/0590353403" class="book-link" target="_blank"><i>Harry Potter and The Philosopher's stone</i> by J.K.Rowling</a></td>
+                <td class="mytable"></td>
+                <td class="mytable"></td>
             </tr>
-            <tr class="table">
-                <th class="table">B2</th>
-                <td class="table"></td>
-                <td class="table"></td>
-                <td class="table"></td>
-                <td class="table"><img src="./images/TheNotebook.jpg?raw=true" alt="The Notebook by N.Sparks" class="center" title="The Notebook by N.Sparks"></td>
+            <tr class="mytable">
+                <th class="mytable">B2</th>
+                <td class="mytable"></td>
+                <td class="mytable"></td>
+                <td class="mytable"></td>
+                <td class="mytable"><img src="./images/TheNotebook.jpg?raw=true" alt="The Notebook by N.Sparks" class="center" title="The Notebook by N.Sparks"></td>
             </tr>
-            <tr class="table">
-                <th class="table">C1</th>
-                <td class="table"><a href="https://www.simonandschuster.com/books/The-Devils-Advocate/Andrew-Neiderman/9781451682557" target="_blank"><img src="./images/thedevil.jpeg?raw=true" alt="The Devil's advocate by Andrew Neiderman" class="center" title="The Devil's advocate by Andrew Neiderman"></a></td>
-                <td class="table"></td>
-                <td class="table"></td>
-                <td class="table"></td>
+            <tr class="mytable">
+                <th class="mytable">C1</th>
+                <td class="mytable"><a href="https://www.simonandschuster.com/books/The-Devils-Advocate/Andrew-Neiderman/9781451682557" target="_blank"><img src="./images/thedevil.jpeg?raw=true" alt="The Devil's advocate by Andrew Neiderman" class="center" title="The Devil's advocate by Andrew Neiderman"></a></td>
+                <td class="mytable"></td>
+                <td class="mytable"></td>
+                <td class="mytable"></td>
             </tr>
-            <tr class="table">
-                <th class="table">C2</th>
-                <td class="table"></td>
-                <td class="table"></td>
-                <td class="table"><img src="./images/it.png?raw=true" alt="It by Stephen King" class="center" title="It by Stephen King"></td>
-                <td class="table"></td>
+            <tr class="mytable">
+                <th class="mytable">C2</th>
+                <td class="mytable"></td>
+                <td class="mytable"></td>
+                <td class="mytable"><img src="./images/it.png?raw=true" alt="It by Stephen King" class="center" title="It by Stephen King"></td>
+                <td class="mytable"></td>
             </tr>
 
         </table>
+        </div>
         <br>
 
         <h2 id="m2">August 2024</h2> <br>
