@@ -181,5 +181,5 @@
     width:35px;
 }
 .btn-success {
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 }

@@ -87,63 +87,88 @@
 
         <p>You can apply for membership in the form below:</p> <br>
 
+        <div class="container">
+
        <form action="https://www.google.com/search?" id="UserEnter" name="UserEnter" target="_blank">
             <input type="hidden" name="q" value="search">
 
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="Daria"><br>
+            <div class="form-group">
+                <label for="fname">First name:</label><br>
+                <input class="form-control" type="text" id="fname" name="fname" value="Daria"><br>
+            </div>
 
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Antipova"><br>
+            <div class="form-group">
+                <label for="lname">Last name:</label><br>
+                <input class="form-control" type="text" id="lname" name="lname" value="Antipova"><br>
+            </div>
 
-            <label for="group">Group:</label><br>
-            <input type="text" id="group" name="group" value="BCONE"><br>
+            <div class="form-group">
+                <label for="group">Group:</label><br>
+                <input class="form-control" type="text" id="group" name="group" value="BCONE"><br>
+            </div>
 
-            <label for="phnumber">Phone number:</label><br>
-            <input type="text" id="phnumber" name="phnumber" value="+708386573"><br>
+            <div class="form-group">
+                <label for="phnumber">Phone number:</label><br>
+                <input class="form-control" type="text" id="phnumber" name="phnumber" value="+708386573"><br>
+            </div>
 
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" value="ddantipova@edu.hse.ru"><br>
+            <div class="form-group">
+                <label for="email">E-mail:</label><br>
+                <input class="form-control" type="email" id="email" name="email" value="ddantipova@edu.hse.ru"><br>
+            </div>
 
-            <label for="sentwhen">Date:</label><br>
-            <input type="date" id="sentwhen" name="sentwhen" value="2024-02-13"><br> 
+            <div class="form-group">
+                <label for="sentwhen">Date:</label><br>
+                <input class="form-control" type="date" id="sentwhen" name="sentwhen" value="2024-02-13"><br> 
+            </div>
 
-            <label for="pwd">Password:</label><br>
-            <input type="password" id="pwd" name="pwd" value="gjhg"><br> 
+            <div class="form-group">
+                <label for="pwd">Password:</label><br>
+                <input class="form-control" type="password" id="pwd" name="pwd" value="gjhg"><br> 
+            </div>
 
-            <label for="meetings">How often can you join the club meetings in a week?</label><br>
-            <input type="number" id="meetings" name="meetings" value='3'><br><br>
+            <div class="form-group">
+                <label for="meetings">How often can you join the club meetings in a week?</label><br>
+                <input class="form-control" type="number" id="meetings" name="meetings" value='3'><br><br>
+            </div>
 
-            <p>What genres are you ready to discuss?</p>
-            <input type="checkbox" id="horror" name="horror" value="Horror" checked>
-            <label for="horror">Horror</label><br>
-            <input type="checkbox" id="thriller" name="thriller" value="Thriller" checked>
-            <label for="thriller">Thriller</label><br>
-            <input type="checkbox" id="fantasy" name="fantasy" value="Fantasy">
-            <label for="fantasy">Fantasy</label><br>
-            <input type="checkbox" id="romance" name="romance" value="Romance">
-            <label for="romance">Romance</label>
-            <br><br>
+            <div class="form-group">
+                <p>What genres are you ready to discuss?</p>
+                <input type="checkbox" id="horror" name="horror" value="Horror" checked>
+                <label for="horror">Horror</label><br>
+                <input type="checkbox" id="thriller" name="thriller" value="Thriller" checked>
+                <label for="thriller">Thriller</label><br>
+                <input type="checkbox" id="fantasy" name="fantasy" value="Fantasy">
+                <label for="fantasy">Fantasy</label><br>
+                <input type="checkbox" id="romance" name="romance" value="Romance">
+                <label for="romance">Romance</label>
+                <br><br>
+            </div>
 
-            
-            <p>What is your English level?</p>
-            <input type="radio" id="b1" name="lang-level" value="B1">
-            <label for="b1">B1</label>
-            <input type="radio" id="b2" name="lang-level" value="B2">
-            <label for="b2">B2</label>
-            <input type="radio" id="c1" name="lang-level" value="C1" checked>
-            <label for="c1">C1</label>
-            <input type="radio" id="c2" name="lang-level" value="C2">
-            <label for="c2">C2</label>
-            <br><br>
+            <div class="form-group"> 
+                <p>What is your English level?</p>
+                <input type="radio" id="b1" name="lang-level" value="B1">
+                <label for="b1">B1</label>
+                <input type="radio" id="b2" name="lang-level" value="B2">
+                <label for="b2">B2</label>
+                <input type="radio" id="c1" name="lang-level" value="C1" checked>
+                <label for="c1">C1</label>
+                <input type="radio" id="c2" name="lang-level" value="C2">
+                <label for="c2">C2</label>
+                <br><br>
+            </div>
 
-            <p>Do you have any additional comments?</p><br>
-            <textarea name="comments" rows="10" cols="30">Nothing more to add</textarea><br>
-            <input type="hidden" id="cust-id" name="cust-id" value="12345">
+            <div class="form-group">
+                <p>Do you have any additional comments?</p><br>
+                <textarea name="comments" rows="10" cols="30">Nothing more to add</textarea><br>
+                <input type="hidden" id="cust-id" name="cust-id" value="12345">
+            </div>
 
 
-            <input type="submit" value="Submit" name="submit">
-        </form><br> <br>
+            <input class="btn btn-primary" type="submit" value="Submit" name="submit">
+        </form>
+        </div>
+        <br> <br>
 
     </div>
 </div>
